@@ -9,7 +9,7 @@ def run_git_log(project_folder, authors):
     if not os.path.isdir(git_folder):
         raise ValueError("The provided folder does not contain a '.git' directory.")
 
-    git_log_command = ["git", "-C", project_folder, "log", "--pretty=format:%ad: %n%s%n%b", "--no-merges", "--date=format:%Y-%m"]
+    git_log_command = ["git", "-C", project_folder, "log", "--pretty=format:%ad: %n%s  %n%b", "--no-merges", "--date=format:%Y-%m"]
     for author in authors:
         git_log_command.extend(["--author", author])
     
