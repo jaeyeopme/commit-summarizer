@@ -24,7 +24,7 @@
 3. Run the following command to execute the script:
 
     ```bash
-    python commit_summarizer.py [project folder path] --authors [author1] [author2] ... --output [output filename]
+    python commit_summarizer.py [project folder path] --authors [author1] [author2] ... --output [output filename].md
     ```
 
     Here:
